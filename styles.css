@@ -227,6 +227,9 @@ body {
     text-align: left;
     margin-bottom: 10px;
 }
+.experiences__company-project-name a{
+    color: inherit;
+}
 
 .experiences__company-project-features {
     color: var(--secondary-text-color);
