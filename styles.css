@@ -68,6 +68,7 @@ body {
         margin-right: 0;
     }
 }
+
 /* Contact info Styles */
 .contact-info__header,
 .contact-info__sub-header {
@@ -132,6 +133,7 @@ body {
     border: 3px solid;
     border-color: var(--text-decoration-color);
 }
+
 .intro {
     display: flex;
     justify-content: start;
@@ -158,9 +160,123 @@ body {
     color: var(--secondary-text-color);
     text-align: justify;
 }
-.intro_list li{
+
+.intro_list li {
     padding-left: 0.5em;
 }
-.intro_list li::marker{
-   content: "💻";
+
+.intro_list li::marker {
+    content: "💻";
+}
+
+/* resume body blocks styles */
+.resume__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+@media screen and (max-width: 576px) {
+    .resume__body{
+        flex-direction: column;
+    }
+}
+
+.left-block {
+    max-width: 50%;
+}
+
+.right-block {
+    max-width: 50%;
+}
+
+/* Skills block */
+.skills__header {
+    color: var(--secondary-text-color);
+    margin-bottom: 15px;
+}
+
+.skills__list {
+    color: var(--secondary-text-color);
+    text-align: justify;
+    padding-left: 1em;
+}
+.skills__list li{
+    padding-left: 0.2em;
+}
+.skills__list li::marker{
+    content: "🖥";
+}
+
+.experiences {
+    flex: 1 1 60%;
+    margin-right: 50px;
+}
+
+.experiences__header {
+    color: var(--secondary-text-color);
+    margin-bottom: 20px;
+}
+
+.experiences__company-project {
+    margin-bottom: 25px;
+}
+
+.experiences__company-project-name {
+    color: var(--primary-text-color);
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.experiences__company-project-features {
+    color: var(--secondary-text-color);
+    padding-left: 20px;
+}
+
+.experiences__company-project-features li::marker {
+    content: "🔋";
+}
+
+.experiences__company-project-features a {
+    color: inherit;
+}
+
+/* Additional info blocks(Languages, Education) */
+.additional-info {
+    flex: 1 1 40%;
+}
+
+.additional-info__education {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.additional-info__education-header {
+    color: var(--secondary-text-color);
+    text-align: left;
+}
+
+.additional-info__education-university-durability {
+    color: var(--durability-text-color);
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.additional-info__education-university-name {
+    color: var(--secondary-text-color);
+}
+
+.additional-info__languages {
+    margin-bottom: 20px;
+}
+
+.additional-info__languages-header {
+    color: var(--secondary-text-color);
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.additional-info__languages-item {
+    color: var(--secondary-text-color);
 }
