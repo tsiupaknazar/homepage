@@ -50,6 +50,7 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+
   .main-info,
   .contact_info_container {
     flex-direction: column;
@@ -215,10 +216,12 @@ body {
 
 .skill-tag:not(.soft):hover {
   background: linear-gradient(135deg, #d4e4fc 0%, #b8d4f8 100%);
-.skills__header {
-  color: var(--secondary-text-color);
-  text-align: center;
-  margin-bottom: 15px;
+
+  .skills__header {
+    color: var(--secondary-text-color);
+    text-align: center;
+    margin-bottom: 15px;
+  }
 }
 
 .skills__text {
