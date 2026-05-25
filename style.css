@@ -50,6 +50,7 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+
   .main-info,
   .contact_info_container {
     flex-direction: column;
@@ -159,15 +160,62 @@ body {
   text-align: justify;
 }
 
-.skills__header {
-  color: var(--secondary-text-color);
-  text-align: center;
-  margin-bottom: 15px;
+.skills {
+  margin-bottom: 30px;
 }
 
-.skills__text {
-  color: var(--secondary-text-color);
-  text-align: justify;
+.skills__header {
+  color: var(--primary-text-color);
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--border-color);
+  display: inline-block;
+}
+
+.skills__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.skill-tag {
+  background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+  color: var(--primary-text-color);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: default;
+  border: 1px solid transparent;
+}
+
+.skill-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: var(--text-decoration-color);
+}
+
+.skill-tag.soft {
+  background: linear-gradient(135deg, #fff5e6 0%, #ffe6cc 100%);
+  color: #cc7000;
+  border-color: var(--border-color);
+}
+
+.skill-tag.soft:hover {
+  background: linear-gradient(135deg, #ffe6cc 0%, #ffd9b3 100%);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.skill-tag:not(.soft) {
+  background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%);
+  color: #0066cc;
+}
+
+.skill-tag:not(.soft):hover {
+  background: linear-gradient(135deg, #d4e4fc 0%, #b8d4f8 100%);
 }
 
 /* Experience and Additional Info Styles */
